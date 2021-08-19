@@ -14,7 +14,7 @@ CREATE TABLE film (
     film_id INT AUTO_INCREMENT,
     film_name VARCHAR(100) NOT NULL,
     rating VARCHAR(2) NOT NULL,
-    runtime TIME NOT NULL,
+    runtime_mins SMALLINT NOT NULL,
     PRIMARY KEY (film_id)
 );
 
@@ -22,7 +22,7 @@ CREATE TABLE foodrink (
     foodrink_id INT AUTO_INCREMENT,
     size_of_drink CHAR(1) NOT NULL,
     size_of_popcorn CHAR(1) NOT NULL,
-    price DECIMAL NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
     PRIMARY KEY (foodrink_id)
 );
 
