@@ -1,6 +1,6 @@
-DROP DATABASE if exists cinema
-CREATE DATABASE cinema
-USE cinema
+DROP DATABASE if exists cinema;
+CREATE DATABASE cinema;
+USE cinema;
 
 CREATE TABLE customer (
     customer_id INT AUTO_INCREMENT,
@@ -12,7 +12,7 @@ CREATE TABLE customer (
 
 CREATE TABLE booking (
     booking_id INT AUTO_INCREMENT,
-    fk_customer_id INT
+    fk_customer_id INT,
     date_booking DATETIME NOT NULL,
     PRIMARY KEY (booking_id),
     FOREIGN KEY (fk_customer_id) REFERENCES customer(customer_id)    
