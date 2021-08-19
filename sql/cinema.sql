@@ -21,6 +21,7 @@ CREATE TABLE film (
 CREATE TABLE booking (
     booking_id INT AUTO_INCREMENT,
     fk_customer_id INT,
+    fk_film_id INT,
     date_booking DATETIME NOT NULL,
     PRIMARY KEY (booking_id),
     FOREIGN KEY (fk_customer_id) REFERENCES customer(customer_id),
